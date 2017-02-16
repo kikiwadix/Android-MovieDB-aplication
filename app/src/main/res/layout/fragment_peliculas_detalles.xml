@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/titulo"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/puntuacion"
+            android:layout_marginLeft="47dp"
+            android:layout_marginBottom="93dp"
+            android:layout_above="@+id/descripcion"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/poster"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:alpha="1"
+            android:layout_below="@+id/titulo"
+            android:layout_toEndOf="@+id/puntuacion"
+            android:layout_marginStart="47dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:id="@+id/imageView2"
+            android:layout_alignBottom="@+id/puntuacion"
+            android:layout_alignStart="@+id/puntuacion"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descripcion"
+            android:layout_below="@+id/poster"
+            android:layout_alignStart="@+id/titulo"
+            android:layout_marginTop="17dp"
+            android:textSize="10sp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/lvReparto"
+            android:layout_below="@+id/descripcion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:text="REPARTO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_light"
+            android:layout_below="@+id/descripcion"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>
